@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="="utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <!-- Links -->
+        <link href="CSS_components/StyleSheet.css" rel="stylesheet">
+        <link href="CSS_components/Photos.css" rel="stylesheet">
+        <link href="CSS_components/ProfilePic.css" rel="stylesheet">
+        <link href="https://use.typekit.net/hyr5ahg.css" rel="stylesheet">
+        <style>
+
+        .big_container {
+            display: grid;
+            flex-direction: row;
+            grid-template-rows: [user_name] 3rem [profile_pic] 4.5rem [profile_desc] 8rem [pics];
+            gap: 2rem;
+
+            width: 37rem;
+            max-width: 37rem;
+            height: 70rem;
+            max-height: 80rem;
+
+            padding: 2%;
+            margin: 10%;
+            overflow: scroll;
+
+            border: 3px solid var(--purple);
+            /* background-color: ; */
+            border-radius: 6%;
+        }
+
+        .user_name {
+            font-size: 2rem;
+        }
+
+        .profile_desc {
+            font-size: 1.1rem;
+        }
+
+        .border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .border .bord {
+            width: 80%;
+            border: 1px solid black;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="big_container">
+
+            <div class="user_name">@danmccosta</div>
+
+            <div class="profile_pic_and_stats">
+                <div class="profile_pic">
+                    <img src="Photos/profile_pic.jpeg"></img>
+                </div>
+                    
+                <div class="stat posts"> <div class="number">12</div><div class="text">Posts</div> </div>
+                <div class="stat followers"> <div class="number">360</div><div class="text">Followers</div> </div>
+                <div class="stat following"> <div class="number">414</div><div class="text">Following</div> </div>
+            </div> 
+
+            <div class="profile_desc">
+                <p><span style="font-weight:bold">Dan Costa</span><br>
+                    Monaco - London - New York <br>
+                    Yale Economist <br>
+                    LSE '20 <br>
+                </p>
+            </div>
+
+            <div class="border"><div class="bord"></div></div>
+            
+            <div class="photos">
+
+                <div class="photo">
+                    <img src="Photos/IMG_0362.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_0370.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_0489.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_2502.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_3687.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_4946.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/IMG_5497.jpeg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="Photos/DSC_0308.jpeg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>

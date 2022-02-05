@@ -1,0 +1,33 @@
+.profile_pic_and_stats {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.profile_pic>img {
+    object-fit: cover;
+    width: 7rem;
+    height: 7rem;
+
+    border-radius: 50%;
+}
+
+.stat {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2rem;
+}
+
+
+.stat .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
