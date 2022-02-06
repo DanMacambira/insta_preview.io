@@ -8,6 +8,10 @@
     --purple: #833AB4;
     --dark_pink: #C13584;
     --pink: #C13584;
+
+    --bf1: rgb(250,250,250);
+
+    --font: rgb(38,38,38);
 }
 
 body {
@@ -16,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: white;
+    background-color: var(--bf1);
     padding: 0;
     margin: 0;
     width: 100%;
@@ -27,6 +31,7 @@ body {
     font-family: roboto, serif;
     font-weight: 400;
     font-size: 14px;
+    color: var(--font);
 
     /* border: 3px solid black; */
 }

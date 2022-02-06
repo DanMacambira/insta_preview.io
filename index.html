@@ -16,39 +16,53 @@
         .big_container {
             display: grid;
             flex-direction: row;
-            grid-template-rows: [user_name] 3rem [profile_pic] 4.5rem [profile_desc] 8rem [pics];
-            gap: 2rem;
+            /* grid-template-rows: 0.2fr 2fr 1.5fr 0.5fr auto; */
+            grid-auto-rows: min-content;
+            gap: 0.5rem;
 
-            width: 37rem;
-            max-width: 37rem;
-            height: 70rem;
-            max-height: 80rem;
+            width: 40rem;
+            max-width: 40rem;
+            height: 75rem;
+            max-height: 75rem;
 
             padding: 2%;
             margin: 10%;
             overflow: scroll;
 
-            border: 3px solid var(--purple);
+            border: 4px solid var(--purple);
             /* background-color: ; */
-            border-radius: 6%;
+            border-radius: 6.5%;
+
         }
 
         .user_name {
+            /* position: sticky;
+            top: 0; */
             font-size: 2rem;
         }
 
         .profile_desc {
             font-size: 1.1rem;
         }
+        .profile_desc > p {
+            margin: 0;
+            padding: 0;
+        }
 
         .border {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            margin: 0;
+            padding: 0;
+
+            padding-top: 5%;
+            padding-bottom: 8%;
         }
         .border .bord {
-            width: 80%;
-            border: 1px solid black;
+            width: 95%;
+            border: 1px solid rgba(94, 94, 94, 0.2);
         }
 
         </style>
@@ -59,8 +73,10 @@
 
         <div class="big_container">
 
+            <!-- User Name -->
             <div class="user_name">@danmccosta</div>
 
+            <!-- Profile picture and numbers -->
             <div class="profile_pic_and_stats">
                 <div class="profile_pic">
                     <img src="Photos/profile_pic.jpeg"></img>
@@ -71,6 +87,7 @@
                 <div class="stat following"> <div class="number">414</div><div class="text">Following</div> </div>
             </div> 
 
+            <!-- Profile description -->
             <div class="profile_desc">
                 <p><span style="font-weight:bold">Dan Costa</span><br>
                     Monaco - London - New York <br>
@@ -79,9 +96,93 @@
                 </p>
             </div>
 
+
+            
+            <!-- Line to seperate photos from profile -->
             <div class="border"><div class="bord"></div></div>
             
+
+
+            <!-- Grid of Photos -->
             <div class="photos">
+
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_0362.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_0370.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_0489.jpeg" alt="">
+                  </div>
+                </div> 
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_2502.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_3687.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_5497.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                      <img src="Photos/IMG_3687.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_5497.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/DSC_0308.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_5497.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                      <img src="Photos/IMG_3687.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/IMG_5497.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-content">
+                    <img src="Photos/DSC_0308.jpeg" alt="">
+                  </div>
+                </div>  
+
+            </div>      
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/haltu/muuri@0.9.3/dist/muuri.min.js"></script>
+    
+            <script>
+            var grid = new Muuri('.photos', {
+                dragEnabled: true
+            });
+            </script>
+
+            <!-- <div class="photos">
 
                 <div class="photo">
                     <img src="Photos/IMG_0362.jpeg" alt="">
@@ -107,7 +208,7 @@
                 <div class="photo">
                     <img src="Photos/DSC_0308.jpeg" alt="">
                 </div>
-            </div>
+            </div> -->
             
         </div>
 
