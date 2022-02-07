@@ -1,0 +1,45 @@
+.wrapper{
+  width: 4em;
+  height: 4em;
+}
+
+.file-upload{
+  height:100%;
+  width:100%;
+  border-radius: 50%;
+  position:relative;
+
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  
+  background-image: linear-gradient(#405DE6, #C13584 50%, white);
+  background-size: 100% 200%;
+  transition: all 1s;
+  cursor:pointer;
+}
+
+input[type='file']{
+  height:100%;
+  width:100%;
+  border-radius: 50%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  cursor:pointer;
+}
+
+.file-upload:hover{
+    background-position: 0 -100%;
+    color: white;
+    transform: scale(1.1)
+}
+
+.file-upload > img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  cursor:pointer;  
+}
