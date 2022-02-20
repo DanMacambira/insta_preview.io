@@ -46,7 +46,7 @@
 }
 
 .item.muuri-item-dragging {
-  z-index: 3;
+  z-index: 99;
 }
 
 .item.muuri-item-releasing {
@@ -57,12 +57,37 @@
   z-index: 0;
 }
 
+.remove-item {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+
+  padding: 5px;
+
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 .item-content {
   position: relative;
   width: 100%;
   height: 100%;
   cursor: pointer;
   text-align: center;
+
+  transition: all 0.3s ease-out;
 }
 
 .item-content > img {
@@ -70,4 +95,22 @@
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+
+  transition: all 0.3s ease-out;
+}
+
+/* Hover to remove */
+.item-content:hover > img {
+  opacity: 0.7;
+  background-color: rgb(170, 170, 170);
+}
+
+.item-content:hover > .remove-item {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  z-index: 3;
 }

@@ -128,12 +128,13 @@
             <!-- Grid of Photos -->
             <div class="photos", id="photos">
 
-                <!-- <div class="item" data-id="item_1">
+                <!-- <div class="item">
                   <div class="item-content">
-                    <img src="Photos/IMG_0370.jpeg">
+                    <div class="remove-item" id="remove-item-button"><img id="remove-item-button" src="SVG/cross.svg"></div>
+                    <img class="myimg" src="Photos/IMG_0370.jpeg">
                   </div>
-                </div>
-                <div class="item" data-id="item_2">
+                </div> -->
+                <!-- <div class="item" data-id="item_2">
                   <div class="item-content">
                     <img src="Photos/IMG_0370.jpeg" alt="">
                   </div>
@@ -158,64 +159,15 @@
                     <img src="Photos/IMG_5497.jpeg" alt="">
                   </div>
                 </div> -->
-                <!-- <div class="item">
-                    <div class="item-content">
-                      <img src="Photos/IMG_3687.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                  <div class="item-content">
-                    <img src="Photos/IMG_5497.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-content">
-                    <img src="Photos/DSC_0308.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-content">
-                    <img src="Photos/IMG_5497.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="item">
-                    <div class="item-content">
-                      <img src="Photos/IMG_3687.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                  <div class="item-content">
-                    <img src="Photos/IMG_5497.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-content">
-                    <img src="Photos/DSC_0308.jpeg" alt="">
-                  </div>
-                </div>  
- -->
+
             </div>      
             <!-- Muuri reponsive drag and drop grid -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/haltu/muuri@0.9.3/dist/muuri.min.js"></script>  
             <!-- <script src="grid.js"></script> -->
-            <script>
-            // var grid = new Muuri('.photos', {
-            //     dragEnabled: true,
-            //     // dragStartPredicate: function (item, event) {
-            //     //     // Prevent first item from being dragged. 
-            //     //     if (grid.getItems().indexOf(item) === 0) {
-            //     //     return false;
-            //     //     }
-            //     //     // For other items use the default drag start predicate.
-            //     //     return Muuri.ItemDrag.defaultStartPredicate(item, event);
-            //     // }
-            // });
 
-            // console.log(grid.getItems().length)
-            </script>
             <!-- Image uploader -->
-            <script src="image_uploader.js"></script>
+            <script src="grid.js"></script>
 
 
             <!-- <div class="photos">
